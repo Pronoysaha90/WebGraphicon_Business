@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-// import logo from "src/images/logo.jpeg";
+import logo from "../../images/logo.jpeg";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -54,7 +54,7 @@ export const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
               <motion.img
-                src="src/images/logo.jpeg"
+                src={logo}
                 alt="WebGraphicon Logo"
                 className="w-20 h-20 object-contain rounded-sm"
                 whileHover={{ scale: 1.08, rotate: 3 }}

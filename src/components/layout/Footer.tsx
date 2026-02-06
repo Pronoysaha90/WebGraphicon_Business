@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../../images/logo.jpeg";
 import { motion } from "framer-motion";
 import { 
   Twitter, 
@@ -76,9 +77,9 @@ export const Footer = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
               <motion.img
-                src="src/images/logo.jpeg"
+                src={logo}
                 alt="WebGraphicon Logo"
-                className="w-20 h-20 object-contain rounded-sm mb-4"
+                className="w-20 h-20 object-contain rounded-sm mb-3"
                 whileHover={{ scale: 1.08, rotate: 3 }}
               />
             </Link>
